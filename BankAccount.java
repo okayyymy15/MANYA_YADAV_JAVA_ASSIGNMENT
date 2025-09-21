@@ -49,7 +49,7 @@ public class BankAccount {
                 long mobilenumber = input.nextLong();
                 AccountNumber[accountcount] = newaccountnumber;
                 AccountHolderName[accountcount] = Name;
-                AccountBalance[accountcount] = initialdeposit;
+                AccountBalance[accountcount] = amountdeposit;
                 EmailID[accountcount] = email;
                 MobileNumber[accountcount] = mobilenumber;
                 System.out.println("Account created successfully");
@@ -67,7 +67,7 @@ public class BankAccount {
                     System.out.println("Amount deposited successfully.");
                     System.out.println("your new balance is " + AccountBalance[index]);
                 } else {
-                    System.out.println("Cannot find your account");
+                    System.out.println("--NO RECORD FOUND--");
                 }
             } else if (choice == 3) {
                 System.out.print("Enter account number: ");
@@ -80,7 +80,7 @@ public class BankAccount {
                     System.out.println("Amount withdrawn successfully.");
                     System.out.println("your new balance is " + AccountBalance[index]);
                 } else {
-                    System.out.println("Cannot find your account");
+                    System.out.println("--NO RECORD FOUND--");
                 }
             } else if (choice == 4) {
                 System.out.print("Enter account number: ");
@@ -92,7 +92,7 @@ public class BankAccount {
                     System.out.println("Phone number: " + MobileNumber[index]);
                     System.out.println("Avialable Balance: " + AccountBalance[index]);
                 } else {
-                    System.out.println("Cannot find your account");
+                    System.out.println("--NO RECORD FOUND--");
                 }
             } else if (choice == 5) {
                 System.out.print("Enter account number: ");
@@ -106,7 +106,7 @@ public class BankAccount {
                     EmailID[index] = input.nextLine();
                     System.out.println("Account details updated successfully");
                 } else {
-                    System.out.println("Cannot find your account");
+                    System.out.println("--NO RECORD FOUND--");
                 }
             } else {
                 System.out.println("you have exited successfully");
@@ -117,3 +117,4 @@ public class BankAccount {
     }
 
 }
+
