@@ -41,7 +41,7 @@ public class BankAccount {
                 System.out.print("Enter account holder name:");
                 String Name = input.nextLine();
                 System.out.print("Enter your first deposit:");
-                long initialdeposit = input.nextLong();
+                long amountdeposit = input.nextLong();
                 input.nextLine();
                 System.out.print("Enter your email address:");
                 String email = input.nextLine();
@@ -115,4 +115,5 @@ public class BankAccount {
         }
 
     }
+
 }
